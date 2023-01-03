@@ -5,10 +5,10 @@ import fr.ecole.avaj.aircrafts.Coordinates;
 public class WeatherTower extends Tower {
 
     public String getWeather(Coordinates coordinates) {
-        return WeatherProvider.getCurrentWeather(coordinates);
+        return WeatherProvider.getProvider().getCurrentWeather(coordinates);
     }
 
-    protected void changeWeather() {
+    void changeWeather() {
         this.conditionsChanged();
     }
 }

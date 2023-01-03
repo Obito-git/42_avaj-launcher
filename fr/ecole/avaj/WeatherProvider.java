@@ -5,18 +5,16 @@ import fr.ecole.avaj.aircrafts.Coordinates;
 import java.util.Random;
 
 public class WeatherProvider {
-    private WeatherProvider weatherProvider;
+    private static WeatherProvider weatherProvider = new WeatherProvider();
     private static final String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
     private WeatherProvider() {}
 
-    public WeatherProvider getProvider() {
-        if (weatherProvider == null)
-            return new WeatherProvider();
-        return weatherProvider;
+    public static WeatherProvider getProvider() {
+        return WeatherProvider.weatherProvider;
     }
 
-    public static String getCurrentWeather(Coordinates coordinates) {
+    public String getCurrentWeather(Coordinates coordinates) {
         return weather[(((new Random().nextInt(100) + 1) * coordinates.getHeight()) + coordinates.getLatitude()
                                                             + coordinates.getLongitude()) % 4];
     }
