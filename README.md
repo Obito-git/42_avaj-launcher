@@ -1,6 +1,6 @@
 # avaj-launcher
 
-[Subject](https://projects.intra.42.fr/projects/42cursus-avaj-launcher)
+[Subject](https://cdn.intra.42.fr/pdf/pdf/66304/en.subject.pdf)
 
 First projet of the Java projects arc. Implementation of a simple Java program according to a given class diagram written in UML.
 
