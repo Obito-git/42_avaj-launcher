@@ -1,8 +1,8 @@
 # avaj-launcher
 
-[Subject](https://cdn.intra.42.fr/pdf/pdf/61460/en.subject.pdf)
+[Subject](https://projects.intra.42.fr/projects/42cursus-avaj-launcher)
 
-This is the second project from the Java world at 42. You will learn to develop GUI applications with the SWING framework, in order to create an RPG game.
+First projet of the Java projects arc. Implementation of a simple Java program according to a given class diagram written in UML.
 
 ## Result
 
@@ -21,6 +21,6 @@ Creating executable jar file:
 ```bash
 ./run.sh scenario.txt
 ```
-Implimentation of UML Diagram:
+UML Diagram:
 
 ![](git-images/avaj_uml.png)
